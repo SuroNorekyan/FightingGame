@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- red container div -->
+    <div class='rcdiv'>
+        <!-- smaller red container div -->
+        <div class='scdiv'>
+            <!-- player health -->
+            <div class='playerHealthMain'>
+                <div class="playerHealthBG">
+                </div>
+            <div id="playerHealth"></div>
+            </div>
+            <!-- timer -->
+            <div id = 'timer' >
+             10
+            </div>
+            <!-- enemy health -->
+            
+            <div class='enemyHealthMain'>
+                <div class="enemyHealthBG">
+                </div>
+            <div id="enemyHealth"></div>
+            </div>
+            
+        </div>
+        <div id="displayText" style="position: absolute;
+            color: white;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;">Tie</div>
+        <canvas></canvas>
+
+    </div>
+
+    <div class="cbMain"> 
+            <div class="changebackground">
+                    <div class="background1">
+                        <img src="img/background2.jpg" alt="">
+                    </div>
+                    <div class="background1">
+                        <img src="img/background.png" alt="">
+                    </div>
+                    <div class="background1">
+                        <img src="img/background5.jpg" alt="">
+                    </div>
+                    <b>Player 1 choise</b>
+                    <button class="rand" onclick="randFunc(this)">Random</button>
+            </div>
+            
+            <div class="changebackground1">
+                <div class="background2">
+                    <img src="img/background2.jpg" alt="">
+                </div>
+                <div class="background2">
+                    <img src="img/background.png" alt="">
+                </div>
+                <div class="background2">
+                    <img src="img/background5.jpg" alt="">
+                </div>
+                <b>Player 2 choise</b>
+
+                <button class="rand" onclick="randFunc1()">Random</button>
+            
+        </div>
+    </div>
+   
+    
+
+    <script src="utils.js"></script>
+    <script src="classes/classes.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

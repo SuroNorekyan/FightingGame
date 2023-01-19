@@ -1,0 +1,18 @@
+
+let water = new Sprite({
+    position:{
+        x:600,
+        y:130
+    },
+    imageSrc: './img/water.png',
+    scale : 1.75,
+    framesMax: 6
+})
+
+ // function fakeAnimate(){
+        //     window.requestAnimationFrame(fakeAnimate)
+        //     c.fillStyle = 'black'
+        //     c.fillRect(0,0,canvas.width,canvas.height)
+        //     water.update()
+        // }
+        // fakeAnimate()
